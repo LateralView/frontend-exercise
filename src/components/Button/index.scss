@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: $font-family;
+  font-size: $btn-font-size;
+  color: $primary-color;
+  width: 200px;
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid $primary-color;
+  background-color: $secondary-color;
+
+  &.loading {
+    padding: 0 25px;
+  }
+
+  img {
+    width: 33px;
+    height: 33px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    color: $secondary-color;
+    background-color: $primary-color;
+    box-shadow: 4px 4px 18px 0 rgba(55, 56, 53, 0.25);
+    border: 1px solid $primary-color;
+  }
+
+  &.disabled {
+    color: $btn-disabled-color;
+    background: $btn-disabled-background;
+    border-color: $btn-disabled-background;
+    cursor: auto;
+  }
+}

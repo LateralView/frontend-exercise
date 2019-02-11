@@ -1,0 +1,85 @@
+.textfieldWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  .textfieldInputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+    &.currency {
+      &:before {
+        content: "$";
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #8a96a0;
+      }
+
+      &.textfieldError:before {
+        bottom: 28px;
+      }
+    }
+  }
+}
+
+input[type=number], input[type=text] {
+  &.currency {
+    padding-left: 25px;
+  }
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  border: 1px solid #8b8b8b;
+  border-radius: 3.8px;
+  padding: 10px;
+  font-size: 14px;
+
+  &:focus {
+    border: 1px solid #3faca7;
+  }
+}
+
+.textfieldWrapper:not(.textfieldError) {
+  input[type=text], input[type=password], input[type=email], input[type=number] {
+    &:focus + label {
+      color: #3faca7;
+    }
+  }
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #373835;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.textfieldErrorMsg {
+  display: none;
+}
+
+.textfieldError {
+  .textfieldErrorMsg {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #de3535;
+  }
+
+  input[type=text], input[type=password], input[type=email], input[type=number] {
+    border-color: #de3535;
+  }
+
+  label {
+    color: #de3535;
+  }
+
+  &:focus + label {
+    color: #de3535!important
+  }
+}

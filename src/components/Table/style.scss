@@ -1,0 +1,76 @@
+table {
+  border: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #00a8e1;
+  }
+}
+
+table tr {
+  border-top: 1px solid #ddd;
+}
+
+table thead tr {
+  border-top: none;
+}
+
+table th,
+table td {
+  padding: 15px 20px;
+  text-align: left;
+  &.emptyviewMsg {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    padding: 120px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    margin-top: 20px;
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 2px solid #e0e0e0;
+    border-top: none;
+    display: block;
+    margin-bottom: .625em;
+    padding-bottom: 20px;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
