@@ -17,25 +17,18 @@ This is a base frontend project in which we added a little backend that communic
 Spotify API and handles the comments. There are some reducers, Sagas and components not
 related with the scope of this project, but is an example of how we implement the flow.
 
-There are two main directories: `backend` and `frontend`. The exercise is focused on
-`frontend` project. You'll just have to run `backend` (with proper envs) so the front
-is able to access to needed endpoints in order to comunicate with Spotify without
-further configuration.
-
 ### How to run
 
 #### Backend
 1. Run mongod service (install MongoDB if it's not installed on your machine)
-2. Go to backend directory `cd backend/`
-3. Install dependencies: `npm install`
+2. Go to server directory `cd server/`
 3. Start the server `node index.js`
    
 #### Frontend
 From the root directory:
 
-1. Run `npm install` to install project dependencies.
-2. Configure env vars with spotify keys (see below).
-3. Run `npm start` to run the front-end.
+1. run `npm install` to install project dependencies.
+2. run `npm start` to run the front-end.
 
 ### Endpoints
 The backend exposes the following endpoints:
