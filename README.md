@@ -1,5 +1,3 @@
-## A React.js Skeleton born with Redux and Saga on mind
-
 # spotify-exercise
 
 ## A Frontend developer exercise
