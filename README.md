@@ -52,7 +52,7 @@ https://developer.spotify.com/dashboard/
 - Create an App and follow the steps
 - After creating the App, a `client_id` and a `client_secret` will be provided
 
-Once you have the keys, create `.env` file in the root directory with the following env variables:
+Once you have the keys, create `.env` file in the `backend/` directory with the following env variables:
 
 ```
 SPOTIFY_CLIENT_ID=<client_id>
