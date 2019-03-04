@@ -8,14 +8,15 @@ This exercise is made to test your abilities to solve a typical frontend issue.
 
 ### Context
 
-Basically, you'll need to connect to spotify api to be able to do album searchs,
+Basically, you'll need to connect to spotify API to be able to do album searches,
 then from our backend show the current comments, allowing the user to put a comment
 on a specific album. 
 The application should be fully responsive.
 
 This is a base frontend project in which we added a little backend that communicates with
 Spotify API and handles the comments. There are some reducers, Sagas and components not
-related with the scope of this project, but is an example of how we implement the flow.
+related with the scope of this project, but it serves as an example of how we use some components
+and comunicate with a backend.
 
 There are two main directories: `backend` and `frontend`. The exercise is focused on
 `frontend` project. You'll just have to run `backend` (with proper envs) so the front
@@ -31,8 +32,7 @@ further configuration.
 3. Start the server `node index.js`
    
 #### Frontend
-From the root directory:
-
+1. Go to frontend directory `cd frontend/`
 1. Run `npm install` to install project dependencies.
 2. Configure env vars with spotify keys (see below).
 3. Run `npm start` to run the front-end.
@@ -40,7 +40,7 @@ From the root directory:
 ### Endpoints
 The backend exposes the following endpoints:
 
-- GET /search?q=:searchPayload    -> Returns a filtered list
+- GET /search?q=:searchQuery      -> Returns a filtered list
 - GET /album/:albumId             -> Returns album details
 - GET /comments/:albumId          -> Returns album comments
 - POST /comments                  -> Create a new comment
@@ -64,4 +64,4 @@ SPOTIFY_CLIENT_SECRET=<client_secret>
 ### Designs
 
 Ask for permissions of the designs, [Zeplin](https://zeplin.io/) is required.
-There is a [Preview of the Zeplin Design](https://scene.zeplin.io/project/582b01162ad47b3e76efd0e7)
+There is a [Preview of the Zeplin Design](zpl.io/b639y3g)
