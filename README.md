@@ -64,4 +64,4 @@ SPOTIFY_CLIENT_SECRET=<client_secret>
 ### Designs
 
 Ask for permissions of the designs, [Zeplin](https://zeplin.io/) is required.
-There is a [Preview of the Zeplin Design](zpl.io/b639y3g)
+There is a [Preview of the Zeplin Design](https://zpl.io/b639y3g)
